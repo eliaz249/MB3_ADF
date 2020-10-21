@@ -1,0 +1,39 @@
+{
+	"name": "DelimitedText2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "cn5"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "dno",
+				"type": "String"
+			},
+			{
+				"name": "Dname",
+				"type": "String"
+			},
+			{
+				"name": "financial year",
+				"type": "String"
+			},
+			{
+				"name": "quarter",
+				"type": "String"
+			}
+		]
+	}
+}
